@@ -1,10 +1,10 @@
-:root{
---dark: #011A1Eff;
---light: #DABEA1ff;
---accent1: #628A8Bff;
---accentDark: #0F3136ff;
---accentDark2: rgba(15, 49, 54, 0.562);
---accent2: #45757Fff;
+:root {
+    --dark: #011A1Eff;
+    --light: #DABEA1ff;
+    --accent1: #628A8Bff;
+    --accentDark: #0F3136ff;
+    --accentDark2: rgba(15, 49, 54, 0.562);
+    --accent2: #45757Fff;
 }
 
 * {
@@ -44,17 +44,19 @@ body {
     text-align: center;
 }
 
-.overlayText p{
+.overlayText p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 2rem;
 }
-.overlayText .links{
+
+.overlayText .links {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.overlayText .links a{
+
+.overlayText .links a {
     display: block;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -63,10 +65,11 @@ body {
     color: var(--light);
     margin: 3%;
     border-radius: 15%;
-    padding:3%;
+    padding: 3%;
     text-decoration: none;
 }
-.overlayText .links a:hover{
+
+.overlayText .links a:hover {
     background-color: var(--accentDark);
 }
 
