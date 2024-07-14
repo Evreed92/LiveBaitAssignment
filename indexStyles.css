@@ -1,0 +1,77 @@
+:root{
+--dark: #011A1Eff;
+--light: #DABEA1ff;
+--accent1: #628A8Bff;
+--accentDark: #0F3136ff;
+--accentDark2: rgba(15, 49, 54, 0.562);
+--accent2: #45757Fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark);
+    height: 100%;
+    overflow: hidden;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.overlayText {
+    position: absolute;
+    top: 38%;
+    left: 45%;
+    z-index: 1;
+}
+
+.overlayText h1 {
+    font-family: 'Mr Dafoe', sans-serif;
+    font-size: 9rem;
+    font-weight: 200;
+    margin-bottom: -45px;
+    text-align: center;
+}
+
+.overlayText p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+.overlayText .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlayText .links a{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--accentDark2);
+    color: var(--light);
+    margin: 3%;
+    border-radius: 15%;
+    padding:3%;
+    text-decoration: none;
+}
+.overlayText .links a:hover{
+    background-color: var(--accentDark);
+}
+
+#topText {
+    color: var(--light);
+    font-size: 20px;
+    align-self: center;
+}
