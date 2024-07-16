@@ -10,11 +10,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: var(--light);
 }
+
+/*Header and Nav Styles */
 
 header {
     background-color: var(--accent1);
@@ -59,12 +62,13 @@ header .nav {
 
 /*Products Styles*/
 
-content h1{
+content h1 {
     text-align: center;
     margin: 10px;
 }
+
 .products {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px;
 }
