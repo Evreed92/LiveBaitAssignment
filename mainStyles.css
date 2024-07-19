@@ -61,12 +61,12 @@ header .nav {
 }
 
 /*Products Styles*/
-content {
+.content {
     padding-left: 200px;
     padding-right: 200px;
 }
 
-content h1 {
+.content h1 {
     text-align: center;
     margin: 10px;
 }
@@ -82,27 +82,28 @@ content h1 {
     margin: 10px;
 }
 
-article p{
+article p {
     text-wrap: wrap;
 }
-content .main {
+
+.content .main {
     grid-area: main;
 }
 
-content .spool {
+.content .spool {
     grid-area: spool;
 
 }
 
-content .worm {
+.content .worm {
     grid-area: worm;
 }
 
-content .fish {
+.content .fish {
     grid-area: fish;
 }
 
-content .cold {
+.content .cold {
     grid-area: cold;
 }
 
@@ -131,15 +132,15 @@ content .cold {
     grid-column: 1/3;
     text-align: center;
     margin: 5px;
-    box-shadow: var(--accent2);
     border: 3px var(--accent2) solid;
     border-radius: 5%;
     width: 100%;
 }
 
-.name{
+.name {
     text-align: center;
 }
+
 .contact-links {
     margin: 2% 0;
     display: flex;
@@ -194,28 +195,32 @@ footer {
             "spool spool spool"
             "worms fish cold";
     }
-    .contact-links .image{
+
+    .contact-links .image {
         max-width: 250px;
         object-fit: cover;
     }
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
     .products {
         grid-template-areas:
-        "main" "spool" "worms" "fish" "cold";
+            "main" "spool" "worms" "fish" "cold";
     }
-    .contact-links{
+
+    .contact-links {
         flex-direction: column;
         justify-content: center;
     }
-    .contact-section{
+
+    .contact-section {
         flex-direction: row;
         max-width: 100%;
         padding: 1%;
     }
-    .contact-links .image{
+
+    .contact-links .image {
         max-width: 100%;
     }
 }
